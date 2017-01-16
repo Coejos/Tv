@@ -1,7 +1,11 @@
 #include <stdio.h>
+using std::cout;
+
+#include "Tv.h"
 
 int main(int argc, char **argv)
 {
-	printf("hello world\n");
-	return 0;
+    Tv t1;
+    
+    t1.DesligarTv();
 }

@@ -3,9 +3,18 @@
 
 class Tv
 {
+    
+private:
+    int canal, volume;
+    char programa;
+    
 public:
     Tv();
     ~Tv();
+    void DesligarTv();
+    void GravarPrograma();
+    void Tv(tv  Tv);
+    void Tv();
 
 };
 
