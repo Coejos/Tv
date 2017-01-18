@@ -1,7 +1,9 @@
 #include "Tv.h"
 #include <iostream>
 
+
 using std::cout;
+
 
 Tv::Tv(const string bloq, int canal)
 {

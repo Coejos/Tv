@@ -1,12 +1,14 @@
 #ifndef TV_H
 #define TV_H
 
+
 class Tv
 {
     const string bloq;
 
 private:
-    int canal, volume;
+    int canal;
+    static int volume=40;
     string program;
     
     
