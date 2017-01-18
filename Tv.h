@@ -1,26 +1,33 @@
 #ifndef TV_H
 #define TV_H
+#include "string"
 
-
+using std::string;
 class Tv
 {
-    const string bloq;
-
-private:
-    int canal;
-    static int volume=40;
-    string program;
-    
-    
+   
 public:
+
+    Tv(const Tv &);
     Tv();
     ~Tv();
     void DesligarTv();
     void GravarPrograma();
-    void Tv(tv  Tv);
-    void Tv();
-    void BloquearCanal();
+    
+    void BloquearCanal() const;
     void DesbloquearCanal();
+    
+private:
+
+    int canal;
+    static int volume;
+    string program;
+    const string bloq;
+    
+    
+    
+    
+
 
 };
 

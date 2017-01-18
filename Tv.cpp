@@ -1,30 +1,28 @@
 #include "Tv.h"
 #include <iostream>
-
-
 using std::cout;
 
+int Tv::volume=100;
 
-Tv::Tv(const string bloq, int canal)
+Tv::Tv()
 {
-    this->bloq= bloq;
     
-    if(bloq=='1')
-        BloquearCanal(this->canal);
-        else
-            DesbloquearCanal(this->canal);
-            
-           
-  }
+}
+
+Tv::Tv(const Tv &t)
+{
+    canal= t.canal;
+    program=t.program;
+
+    
+}
 
 Tv::~Tv()
 {
 }
 
-void Tv::Tv()
+void Tv::BloquearCanal() const
 {
-    cout<<" Desligando em 3, 2,..."<<;
+    cout<<"Canal bloqueado";
 }
-
-
 

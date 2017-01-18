@@ -1,11 +1,12 @@
-#include <stdio.h>
+#include <iostream>
 using std::cout;
 
 #include "Tv.h"
 
 int main(int argc, char **argv)
 {
-    Tv t1;
+   cout<<"nada haver...";
     
-    t1.DesligarTv();
+    
+    
 }
