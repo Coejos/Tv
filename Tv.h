@@ -3,10 +3,12 @@
 
 class Tv
 {
-    
+    const string bloq;
+
 private:
     int canal, volume;
-    char programa;
+    string program;
+    
     
 public:
     Tv();
@@ -15,6 +17,8 @@ public:
     void GravarPrograma();
     void Tv(tv  Tv);
     void Tv();
+    void BloquearCanal();
+    void DesbloquearCanal();
 
 };
 

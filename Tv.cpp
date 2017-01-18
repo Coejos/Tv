@@ -3,11 +3,17 @@
 
 using std::cout;
 
-Tv::Tv()
+Tv::Tv(const string bloq, int canal)
 {
+    this->bloq= bloq;
     
-    canal=10;
-}
+    if(bloq=='1')
+        BloquearCanal(this->canal);
+        else
+            DesbloquearCanal(this->canal);
+            
+           
+  }
 
 Tv::~Tv()
 {
