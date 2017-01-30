@@ -16,13 +16,16 @@ public:
     
     void BloquearCanal() const;
     void DesbloquearCanal();
+    void AddCanal(int canal);
     
 private:
 
     int canal;
+    int qntCanal;
     static int volume;
     string program;
     const string bloq;
+    string *listaCanal;
     
     
     
