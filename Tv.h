@@ -22,7 +22,7 @@ private:
 
     int canal;
     int qntCanal;
-    static int volume;
+    const static int volume=50;///atributo static const
     string program;
     const string bloq;
     string *listaCanal;

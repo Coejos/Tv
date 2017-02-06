@@ -2,7 +2,8 @@
 using std::cout;
 
 #include "Tv.h"
-#include "Usuario.hpp"
+#include "Usuario.h"
+#include "Tecnico.hpp"
 
 int main(int argc, char **argv)
 {

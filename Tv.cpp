@@ -2,7 +2,9 @@
 #include <iostream>
 using std::cout;
 
-int Tv::volume=100;
+const static int volume=50;
+
+//int Tv::volume=100;
 
 Tv::Tv()
 {
@@ -19,6 +21,8 @@ Tv::Tv(const Tv &t)
 
 Tv::~Tv()
 {
+    
+    
 }
 
 void Tv::BloquearCanal() const
@@ -27,7 +31,6 @@ void Tv::BloquearCanal() const
 }
 
 
-///atividade em sala
 void Tv::AddCanal(int canal)
 {
     string *aux=new string[qntCanal];
